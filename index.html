@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pierrick</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-light text-dark">
+<header>
+    <nav class="navbar navbar-expand-lg bg-light text-dark changement-mode" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary text-decoration-none" href="#profil">Pierrick Tokarek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-dark active" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#bts-sio">BTS SIO</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#veille">Veille technologique</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link disabled">Disabled</a></li> -->
+                </ul>
+                <!-- <a id="toggleMode" class="nav-link btn text-decoration-none ms-auto">Changer de mode</a> -->
+                <button id="toggleMode" class="btn btn-outline-secondary ms-auto">
+                  Passer en mode sombre
+                </button>
+                
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="">
+  <section class="mb-5 d-flex align-items-center justify-content-center accueil-ligh accueil-dark" id="accueil">
+    <div class="text-center accueil-text">
+      <h1 class="display-5 bienvenue-text">Bienvenue sur mon portfolio !</h1>
+      <p class="lead">Je suis <strong>Pierrick Tokarek</strong>, étudiant en BTS SIO.</p>
+      <a href="#profil" class="btn btn-primary btn-lg text-decoration-none">En savoir plus</a>
+    </div>
+  </section>  
+  
+<div class="container py-5">
+  <section class="mb-5" id="profil">
+    <h2>À propos de moi</h2>
+    <div class="row">
+      <!-- Présentation -->
+      <div class="col-md-6">
+        <p>Je suis étudiant en première année de <strong>BTS SIO</strong> au <a href="https://www.sb-lycee.fr/">lycée Saint-Bénigne</a> à Dijon. J'ai obtenu un BAC Technologique en <strong>STi2D</strong>. Mon objectif est de devenir développeur web.</p>
+        <h3>Mes qualités :</h3>
+        <ul>
+          <li><i class="bi bi-code-slash"></i> Passionné par le développement web.</li>
+          <li><i class="bi bi-hdd-rack"></i> Connaissances en administration réseau et sécurité.</li>
+          <li><i class="bi bi-person-bounding-box"></i> Toujours en quête de nouvelles compétences.</li>
+        </ul>
+        <div class="text-center d-md-none mt-4">
+          <img src="./img/pp.jpg" alt="photo de moi" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
+        </div>
+        <div class="text-center">
+        <a class="btn btn-primary mt-5 px-5 text-decoration-none" href="./img/CV_TOKAREK_Pierrick.pdf" role="button" target="_blank">Mon CV</a>
+      </div>
+      </div>
+  
+      <!-- Photo -->
+      <div class="col-md-6 d-none d-md-flex justify-content-center align-items-start">
+        <img src="./img/pp.jpg" alt="photo de moi" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+      </div>
+    </div>
+  
+    <div class="mt-5">
+      <h2 class="mb-4">Mon parcours</h3>
+      <div class="row">
+        <!-- Colonne scolaire -->
+        <div class="col-md-6">
+          <h4><i class="bi bi-book-fill me-2"></i>Parcours scolaire</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h6>2024 - 2026</h6>
+                <p><strong>BTS SIO (option SLAM)</strong><br>Lycée Saint-Bénigne, Dijon</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h6>2021 - 2024</h6>
+                <p><strong>Bac STi2D - option ITEC</strong><br>Lycée Léon Blum, Le Creusot<br><em>Mention assez bien</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Colonne stages -->
+        <div class="col-md-6">
+          <h4><i class="bi bi-briefcase-fill me-2"></i>Stages & Travaux</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h6>2025</h6>
+                <p><strong>Stages chez Dmoti</strong><br>Refonte d'un site web pour une entreprise de domitique (ajout support client, système de ticket, chatbot IA) - Bessan</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h6>2022 - 2023</h6>
+                <p><strong>Stages dans l’audiovisuel</strong><br>Studio M (Nice) et Grand Autunois Morvan</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h6>2021</h6>
+                <p><strong>Travaux d'été</strong><br>Entretien, peinture, espaces verts – Commune de Broye</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h6>2020</h6>
+                <p><strong>Stage de 3ème</strong><br>Gendarmerie de Charnay-lès-Mâcon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="mb-5 py-5" id="bts-sio">
+      <h2>BTS SIO</h2>
+      <p>Le BTS SIO (Services Informatiques aux Organisations) est une formation qui prépare les étudiants aux métiers de l'informatique, avec des spécialisations en développement et réseau. Cette formation m'a permis d'acquérir des compétences techniques solides et une compréhension approfondie de l'informatique. Le BTS SIO se compose de deux spécialités choisi au second semestre de la première année du BTS : <strong>SLAM</strong> et <strong>SISR</strong>.</p>
+      <div class="row mt-5">
+          <div class="col-md-6">
+              <h3>Option SLAM :</h3>
+              <ul>
+                  <li><i class="bi bi-code-slash"></i> Développement web et mobile</li>
+                  <li><i class="bi bi-hdd-rack"></i> Conception de bases de données</li>
+                  <li><i class="bi bi-person-bounding-box"></i> Gestion de projets</li>
+              </ul>
+          </div>
+          <div class="col-md-6">
+              <h3>Option SISR :</h3>
+              <ul>
+                  <li><i class="bi bi-server"></i> Administration de serveurs</li>
+                  <li><i class="bi bi-shield-check"></i> Mise en place de la sécurité</li>
+                  <li><i class="bi bi-hdd-rack"></i> Gestion de réseaux</li>
+              </ul>
+          </div>
+      </div>
+  </section>
+
+  <section class="competences py-5 mb-5" id="competences">
+    <div class="container">
+      <h2 >Compétences</h2>
+      <div class="row g-4 mt-2">
+  
+        <!-- Carte Frontend -->
+        <div class="col-md-4">
+          <div class="card bg-light text-dark text-center shadow-sm changement-mode">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Front-end-logo-color%402x.png/330px-Front-end-logo-color%402x.png" class="card-img-top p-4" style="height: 150px; object-fit: contain;" alt="Frontend">
+            <div class="card-body">
+              <h5 class="card-title">Frontend</h5>
+              <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#frontendCollapse" aria-expanded="false">
+                Voir les compétences ⬇️
+              </button>
+              <div class="collapse mt-3" id="frontendCollapse">
+                <ul class="list-unstyled">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>CSS Responsive</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Carte Backend -->
+        <div class="col-md-4">
+          <div class="card bg-light text-dark text-center shadow-sm changement-mode">
+            <img src="https://cdn-icons-png.flaticon.com/512/1274/1274327.png" class="card-img-top p-4" style="height: 150px; object-fit: contain;" alt="Backend">
+            <div class="card-body">
+              <h5 class="card-title">Backend</h5>
+              <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#backendCollapse" aria-expanded="false">
+                Voir les compétences ⬇️
+              </button>
+              <div class="collapse mt-3" id="backendCollapse">
+                <ul class="list-unstyled">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>MySQL</li>
+                  <li>SQL Server</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Carte Outils -->
+        <div class="col-md-4">
+          <div class="card bg-light text-dark text-center shadow-sm changement-mode">
+            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" class="card-img-top p-4" style="height: 150px; object-fit: contain;" alt="Outils">
+            <div class="card-body">
+              <h5 class="card-title">Outils</h5>
+              <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#outilsCollapse" aria-expanded="false">
+                Voir les compétences ⬇️
+              </button>
+              <div class="collapse mt-3" id="outilsCollapse">
+                <ul class="list-unstyled">
+                  <li>VS Code</li>
+                  <li>AzureDevOps</li>
+                  <li>Git</li>
+                  <li>Docker</li>
+                  <li>Postman</li>
+                  <li>VirtualBox</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+      <div class="col-md-12 mt-4">
+          <div class="card bg-light text-dark text-center shadow-sm changement-mode">
+            <img src="https://cdn-icons-png.flaticon.com/512/3080/3080467.png" class="card-img-top p-4" style="height: 150px; object-fit: contain;" alt="Compétences">
+            <div class="card-body">
+              <h5 class="card-title">Compétences</h5>
+              <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#competencesCollapse" aria-expanded="false">
+                Voir les compétences ⬇️
+              </button>
+              <div class="collapse mt-3" id="competencesCollapse">
+                <ul class="list-unstyled">
+                  <li>Gestion du patrimoine informatique</li>
+                  <li>Réponse aux incidents et aux demandes d’évolution</li>
+                  <li>Développement de la présence en ligne de l’organisation</li>
+                  <li>Travail en mode projet</li>
+                  <li>Mise à disposition de services informatiques</li>
+                  <li>Développement professionnel</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+    
+  <section class="mb-5 py-5" id="projets">
+      <h2>Mes projets</h2>
+      <div class="mb-5">
+        <h3>Création d'une application de sport</h3>
+        <p>Réalisation d'une application permettant aux élèves de faire du sport en cours, projet réalisé en cours et en groupe.</p>
+        <!-- carousel  -->
+        <div id="carousel-sport" class="container mb-5 mt-5">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/aplication-sport/connexion.png" class="d-block w-100" alt="application de sport">
+            </div>
+            <div class="carousel-item">
+              <img src="img/aplication-sport/profil-utilisateur.png" class="d-block w-100" alt="application de sport">
+            </div>
+            <div class="carousel-item">
+              <img src="img/aplication-sport/programme.png" class="d-block w-100" alt="application de sport">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <h3>Développement d'une application pour la gestion d'articles</h3>
+        <p>Ce premier projet en Laravel m'a permis de découvrir la gestion des stocks et d'apprendre à créer, modifier et supprimer des articles efficacement.</p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-6 text-center mt-3">
+            <img src="img/laravel_article.png" alt="application de gestion d'articles" class="w-100 rounded border">
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-5">
+          <h3>Projet sonde stratosphérique</h3>
+          <p>Réalisation d'une nacelle et intégration de capteurs pour mesurer des données physiques lors d'un lancement avec le CNES.</p>
+          <div class="row justify-content-center">
+              <div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-6 text-center">
+                <video controls loop class="w-100 rounded shadow">
+                  <source src="./img/video-sonde.mp4" type="video/mp4">
+                  Votre navigateur ne supporte pas la balise vidéo. Téléchargez la vidéo <a href="./images/video-sonde.mp4">ici</a>.
+                </video>
+              </div>
+            </div>
+                         
+          <p>En savoir plus :
+              <a href="https://www.lejsl.com/education/2023/04/27/des-lyceens-envoient-une-sonde-stratospherique-pour-effectuer-des-mesures-en-haute-altitude" target="_blank">Le JSL</a>,
+              <a href="https://www.creusot-infos.com/news/vie-locale/le-creusot/le-creusot-la-sonde-stratospherique-du-lycee-leon-blum-a-failli-tomber-en-suisse-dans-le-lac-leman.html" target="_blank">Le Creusot Infos</a>
+          </p>
+      </div>
+      
+      <div class="">
+          <h3>Projet caméra sous-marine</h3>
+          <p>Projet de terminale réalisé en groupe, conception d'une caméra capable de filmer sous l'eau.</p>
+      </div>
+  </section>
+
+  <section class="mb-5 py-5" id="veille">
+      <h2>Veille Technologique</h2>
+      <div class="row mt-4">
+
+    <div class="row mt-4">
+
+    <div class="col-md-4 mb-3">
+        <a href="https://thehackernews.com/" target="_blank" class="card p-3 text-decoration-none h-100 bg-light text-dark changement-mode">
+            <h5 class="card-title fw-bold">The Hacker News</h5>
+            <p class="card-text">Ma source principale pour la cybersécurité. Je consulte ce flux quotidiennement pour les vulnérabilités et les malwares (ex: Maverick, JSON c2...).</p>
+        </a>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <a href="https://www.linkedin.com/in/alaingoudey/" target="_blank" class="card p-3 text-decoration-none h-100 bg-light text-dark changement-mode">
+            <h5 class="card-title fw-bold">Alain Goudey (Expert)</h5>
+            <p class="card-text">Suivi de cet influenceur Tech pour identifier les grandes tendances du numérique et l'impact des nouvelles technologies (IA, Digital).</p>
+        </a>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <a href="https://www.youtube.com/@FRHardware" target="_blank" class="card p-3 text-decoration-none h-100 bg-light text-dark changement-mode">
+            <h5 class="card-title fw-bold">Veille Hardware</h5>
+            <p class="card-text">Je suis l'actualité du matériel informatique via FRHardware pour rester informé sur les dernières innovations et les performances des composants.</p>
+        </a>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <a href="https://wakelet.com/wake/KpomoxHqdEv59ni97CkP5" target="_blank" class="card p-3 text-decoration-none h-100 bg-light text-dark changement-mode">
+            <h5 class="card-title fw-bold">Ma Bibliothèque (Wakelet)</h5>
+            <p class="card-text">Retrouvez ici <strong>tous les articles</strong> que j'ai sélectionnés</p>
+        </a>
+    </div>
+
+</div>
+  </section>
+
+  <section class="contact-section mb-5 py-5" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact</h2>
+        <div class="row">
+          <!-- Colonne gauche : contact -->
+          <div class="col-md-6 mb-4">
+            <div class="mb-3">
+              <i class="bi bi-envelope-fill me-2 text-primary"></i>
+              <strong>Email :</strong> <a class="text-dark lien" href="mailto:pierrick.tokarek@mail.com">pierrick.tokarek@saint-benigne.fr</a>
+            </div>
+            <div class="mb-3">
+              <i class="bi bi-phone-fill me-2 text-primary"></i>
+              <strong>Téléphone :</strong> <a class="text-dark lien" href="tel:+33782063287">+33 7 82 06 32 87</a>
+            </div>
+            <div class="mb-3">
+              <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+              <strong>Localisation :</strong> Dijon, Le Creusot, Béziers
+            </div>
+            <div class="mb-3">
+              <i class="bi bi-file-earmark-person-fill me-2 text-primary"></i>
+              <strong>CV :</strong> <a class="text-dark lien" href="./img/CV_TOKAREK_Pierrick.pdf" target="_blank" class="text-decoration-underline">Consulter mon CV</a>
+            </div>
+            <div class="mb-3">
+              <i class="bi bi-linkedin me-2 text-primary"></i>
+              <strong>LinkedIn :</strong> <a class="text-dark lien" href="https://www.linkedin.com/in/pierrick-t-325310342/" target="_blank" class="text-decoration-underline">Pierrick Tokarek</a>
+            </div>
+          </div>
+    
+          <!-- Colonne de droite -->
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <p class="lead">
+              Vous souhaitez en savoir plus sur mon profil ou pouvoir échanger ?
+            </p>
+            <p>
+              N’hésitez pas à consulter mon Cv et à me contacter via mes coordonnées ci-contre. Je suis ouvert aux opportunités de stages ou d'alternance dans le domaine du développement !
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; 2025 Pierrick Tokarek. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</main>
+</body>
+</html>

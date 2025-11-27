@@ -1,0 +1,238 @@
+/* Polices Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap'); */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+/* Navbar  */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background: white; */
+  transition: top 0.5s ease;
+  z-index: 999;
+}
+
+#navbar.hide {
+  top: -100px; /* Tu peux ajuster selon la hauteur de ta navbar */
+}
+
+
+.accueil-light {
+  min-height: 100vh;
+  background-image: url("img/aa153dff-7d74-453a-bd0d-c7c0d522df96.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accueil-dark {
+  min-height: 100vh;
+  background-image: url("img/ChatGPT\ Image\ 15\ avr.\ 2025\,\ 21_16_35.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* .accueil-text{
+  transform: translateY(-25%);
+} */
+
+section {
+  /* padding: 70px; */
+  scroll-margin-top: 60px;
+}
+
+@media screen and (max-width: 425px) {
+  #accueil a {
+    transform: scale(0.8);
+  }
+  .accueil-text {
+    padding: 25px;
+  }
+  .bienvenue-text {
+    margin-bottom: 20px;
+  }
+  
+}
+
+/* Listes  */
+ul {
+  list-style: none;
+}
+
+/* Titres */
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0d6efd;
+}
+
+/* Liens */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image de profil */
+img.rounded-circle {
+    max-width: 200px;
+    border: 4px solid #0d6efd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Parcours et stages  */
+.timeline {
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid #0d6efd;
+  margin-top: 1rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #0d6efd;
+}
+
+.timeline-content h6 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+/* Vidéo */
+video {
+    border-radius: 0.75rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact */
+
+.contact-section i {
+    font-size: 1.2rem;
+  }
+  
+  .contact-section a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+    color: #0d6efd;
+  }
+  
+
+/* Cartes de veile techno et competences */
+section .card {
+    transition: transform 0.2s ease;
+}
+section .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icônes */
+.bi {
+    margin-right: 0.5rem;
+    color: #0d6efd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    img.rounded-circle {
+        max-width: 150px;
+        margin: 1rem 0;
+    }
+}
+
+/* Carrousel  */
+
+/* .carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .carousel-track img {
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-track img:hover {
+    transform: scale(1.1);
+  } */
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Carousel sport  */
+  @media screen and (min-width: 768px) {
+  #carousel-sport {
+    height: auto;
+    width: 80%;
+  }
+}
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .carousel-track img {
+      height: 40px;
+    }
+  }   
+  
+  
