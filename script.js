@@ -181,3 +181,53 @@ document.getElementById("toggleMode").addEventListener("click", function () {
 
     updateToggleButtonText(); // Met à jour le texte du bouton
 });
+
+
+
+
+// API Google Sheets
+
+  const sheetId = '1gDvwcbyvLsSSwE30way_ndas2k6Rl7FMt7GsD4etrL4'; 
+  const sheetName = 'Feuille 1'; 
+  const apiURL = `https://opensheet.elk.sh/${sheetId}/${sheetName}`;
+
+  fetch(apiURL)
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('flux-veille');
+      if (!container) return;
+      
+      container.innerHTML = ''; 
+
+      data.reverse().forEach(article => {
+        // Changement ici : col-md-6 pour faire 2 colonnes sur PC
+        // h-100 sur la carte pour égaliser les hauteurs
+        const cardHTML = `
+          <div class="col-md-6 mb-4">
+            <div class="card p-4 h-100 shadow-sm bg-light text-dark changement-mode border-0 border-start border-success border-4">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="fw-bold mb-0 text-primary">${article.Titre || 'Article de veille'}</h5>
+                </div>
+                <p class="text-muted small mb-3">${article.Date || ''}</p>
+                
+                <div class="card-text small mb-4 flex-grow-1">
+                    <p class="mb-2 text-dark"><strong>Constat :</strong> ${article.Constat || 'Non renseigné'}</p>
+                    <p class="mb-2 text-dark"><strong>Technique :</strong> ${article.Technique || 'Non renseigné'}</p>
+                    <p class="mb-0 text-dark"><strong>Lien SLAM :</strong> ${article["Lien SLAM"] || 'Non renseigné'}</p>
+                </div>
+
+                <div class="mt-auto">
+                    <a href="${article["Lien Article"] || '#'}" target="_blank" class="btn btn-sm btn-outline-primary" style="width: fit-content;">
+                        Lire l'article source <i class="bi bi-box-arrow-up-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+          </div>
+        `;
+        container.innerHTML += cardHTML;
+      });
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById('flux-veille').innerHTML = '<p class="text-danger ms-3">Erreur lors de la récupération des articles.</p>';
+    });
