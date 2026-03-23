@@ -208,16 +208,16 @@ document.getElementById("toggleMode").addEventListener("click", function () {
                 <div class="d-flex justify-content-between align-items-start mb-2">
                     <h5 class="fw-bold mb-0 text-primary">${article.Titre || 'Article de veille'}</h5>
                 </div>
-                <p class="text-muted small mb-3">${article.Date || ''}</p>
+                <p class="small mb-3">${article.Date || ''}</p>
                 
                 <div class="card-text small mb-4 flex-grow-1">
-                    <p class="mb-2 text-dark"><strong>Constat :</strong> ${article.Constat || 'Non renseigné'}</p>
-                    <p class="mb-2 text-dark"><strong>Technique :</strong> ${article.Technique || 'Non renseigné'}</p>
-                    <p class="mb-0 text-dark"><strong>Lien SLAM :</strong> ${article["Lien SLAM"] || 'Non renseigné'}</p>
+                    <p class="mb-2"><strong>Constat :</strong> ${article.Constat || 'Non renseigné'}</p>
+                    <p class="mb-2"><strong>Technique :</strong> ${article.Technique || 'Non renseigné'}</p>
+                    <p class="mb-0"><strong>Lien SLAM :</strong> ${article["Lien SLAM"] || 'Non renseigné'}</p>
                 </div>
 
                 <div class="mt-auto">
-                    <a href="${article["Lien Article"] || '#'}" target="_blank" class="btn btn-sm btn-outline-primary" style="width: fit-content;">
+                    <a href="${article["Lien article"] || '#'}" target="_blank" class="btn btn-sm btn-outline-primary" style="width: fit-content;">
                         Lire l'article source <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
                 </div>
