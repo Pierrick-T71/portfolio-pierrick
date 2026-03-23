@@ -72,6 +72,19 @@ document.addEventListener("DOMContentLoaded", function () {
         accueil.classList.remove("accueil-light");
         accueil.classList.add("accueil-dark");
     }
+
+    // ajuster les textes mutés au chargement
+    document.querySelectorAll('.text-muted').forEach(function(el) {
+        if (document.body.classList.contains('bg-dark')) {
+            el.classList.remove('text-muted');
+            el.classList.add('text-light');
+        } else {
+            el.classList.remove('text-light');
+            el.classList.add('text-muted');
+        }
+    });
+
+    updateToggleButtonText();
 });
 
 document.getElementById("toggleMode").addEventListener("click", function () {
@@ -153,6 +166,17 @@ document.getElementById("toggleMode").addEventListener("click", function () {
         lien.classList.remove("text-dark");
         lien.classList.add("text-light");
     }
+    });
+
+    // adjust any muted text for legibility
+    document.querySelectorAll('.text-muted').forEach(function(el) {
+        if (document.body.classList.contains('bg-dark')) {
+            el.classList.remove('text-muted');
+            el.classList.add('text-light');
+        } else {
+            el.classList.remove('text-light');
+            el.classList.add('text-muted');
+        }
     });
 
     updateToggleButtonText(); // Met à jour le texte du bouton

@@ -184,6 +184,12 @@ section .card:hover {
     }
 }
 
+/* Dark mode tweaks */
+body.bg-dark .text-muted {
+    /* lightened grey for readability on dark backgrounds */
+    color: #adb5bd !important;
+}
+
 /* Carrousel  */
 
 /* .carousel-container {
