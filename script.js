@@ -204,7 +204,7 @@ document.getElementById("toggleMode").addEventListener("click", function () {
         // h-100 sur la carte pour égaliser les hauteurs
         const cardHTML = `
           <div class="col-md-6 mb-4">
-            <div class="card p-4 h-100 shadow-sm bg-light text-dark changement-mode border-0 border-start border-success border-4">
+            <div class="card p-4 h-100 shadow-sm bg-light text-dark changement-mode border-0 border-start border-primary border-4">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                     <h5 class="fw-bold mb-0 text-primary">${article.Titre || 'Article de veille'}</h5>
                 </div>
