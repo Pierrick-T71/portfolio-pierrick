@@ -39,13 +39,61 @@
     </div>
 
     <section class="mb-5">
-        <div class="card shadow-sm p-4 changement-mode bg-light text-dark border-0">
-            <h2 class="h4 fw-bold mb-3"><i class="bi bi-card-text me-2 text-primary"></i>Résumé du stage</h2>
-            <p>
-                Lors de mon stage de première année chez <strong>Dmoti</strong>, j'ai été chargé de la refonte du site web de l'entreprise. 
-                Mes missions ont couvert l'ensemble du cycle de vie du projet : de la mise en place de l'environnement technique à l'amélioration de la relation client via l'IA.
-            </p>
+    <div class="card shadow-sm p-4 changement-mode bg-light text-dark border-0">
+        <h2 class="h4 fw-bold mb-4"><i class="bi bi-card-text me-2 text-primary"></i>Résumé du stage (1ère année)</h2>
+        
+        <p class="mb-5">
+            Lors de mon stage de première année chez <strong>Dmoti</strong>, une entreprise spécialisée dans la domotique et les bâtiments intelligents, j'ai été chargé d'améliorer leur site WordPress pour optimiser la relation client. 
+            Mes missions ont consisté à mettre en place un environnement de développement sécurisé [cite: 541], développer un portail de support technique et intégrer un assistant virtuel basé sur l'IA.
+        </p>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-7">
+                <h3 class="h5 fw-bold text-primary">1. Architecture & Environnement de test</h3>
+                <p>Pour modifier le site sans risquer de le casser en production, j'ai d'abord testé des solutions locales comme XAMPP et Docker. Face à des instabilités, j'ai finalement déployé un environnement de test robuste sur Azure Portal en migrant les données via l'extension WPvivid.</p>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="./img/dmoti/azure.jpeg" alt="Déploiement sur Azure Portal" class="img-fluid rounded shadow-sm">
+            </div>
         </div>
+
+        <hr class="text-muted opacity-25">
+
+        <div class="row align-items-center mb-5 mt-4">
+            <div class="col-md-5 text-center order-2 order-md-1">
+                <img src="./img/dmoti/ticket.png" alt="Interface support client" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-md-7 order-1 order-md-2 mb-3 mb-md-0">
+                <h3 class="h5 fw-bold text-primary">2. Espace de connexion & Système de Tickets</h3>
+                <p>J'ai développé un système de connexion sécurisé avec LoginWP, gérant des redirections spécifiques selon le rôle de l'utilisateur (client ou électricien partenaire). J'y ai intégré un système de tickets de support via Forminator pour centraliser les demandes.</p>
+            </div>
+        </div>
+
+        <hr class="text-muted opacity-25">
+
+        <div class="row align-items-center mb-5 mt-4">
+            <div class="col-md-7">
+                <h3 class="h5 fw-bold text-primary">3. Intégration d'un Chatbot IA</h3>
+                <p>Pour automatiser les réponses techniques, j'ai intégré l'API de ChatGPT (modèle GPT-3.5-turbo) à l'aide du plugin AI Engine. J'ai défini un prompt strict pour limiter l'IA au contexte de l'entreprise, et j'ai rédigé du code CSS pour animer la bulle de chat et la rendre responsive sur mobile.</p>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="./img/dmoti/chatbot.png" alt="Configuration du Chatbot Dmoti" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+
+        <hr class="text-muted opacity-25">
+
+        <div class="row align-items-center mt-4">
+            <div class="col-md-5 text-center order-2 order-md-1">
+                <img src="./img/dmoti/monday.png" alt="Gestion de projet sur Monday" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-md-7 order-1 order-md-2 mb-3 mb-md-0">
+                <h3 class="h5 fw-bold text-primary">4. Gestion de projet & Autonomie</h3>
+                <p>Travaillant en grande autonomie, j'ai structuré mes tâches via l'outil de gestion Monday. En fin de stage, j'ai livré une documentation complète (guide de maintenance, sauvegarde, gestion du chatbot) afin de rendre l'entreprise totalement autonome avec ses nouveaux outils.</p>
+            </div>
+        </div>
+
+    </div>
     </section>
 
     <section class="mb-5" id="competences-detail">
