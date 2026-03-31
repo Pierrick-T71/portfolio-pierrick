@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Pierrick Tokarek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-light text-dark">
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-light text-dark changement-mode" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary text-decoration-none" href="index.html">Pierrick Tokarek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#projets">Projets</a></li>
+                </ul>
+                <button id="toggleMode" class="btn btn-outline-secondary ms-auto">Passer en mode sombre</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container py-5">
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h1 class="display-4 fw-bold">Veille Technologique : Automatisation & IA</h1>
+            <p class="lead">Optimisation du flux d'informations et partage automatisé</p>
+            <hr class="w-25 mx-auto border-primary border-2">
+        </div>
+    </div>
+
+    <section class="mb-5">
+    <div class="card shadow-sm p-4 changement-mode bg-light text-dark border-0">
+        <h2 class="h4 fw-bold mb-4"><i class="bi bi-robot me-2 text-primary"></i>Résumé du projet</h2>
+        
+        <p class="mb-5">
+            Pour structurer ma <strong>veille technologique</strong>, j'ai mis en place un système automatisé permettant de centraliser, traiter et diffuser des articles pertinents. 
+            L'objectif est de transformer une simple lecture sur smartphone en une publication synthétisée sur mon portfolio, réduisant ainsi le temps de traitement manuel tout en exploitant la puissance de l'IA.<br>
+            <span class="mt-2 d-inline-block">Outils principaux : <strong>Make, ChatGPT, iOS Shortcuts & Google Sheets.</strong></span>
+        </p>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-7">
+                <h3 class="h5 fw-bold text-primary">1. Capture & Déclenchement (iOS)</h3>
+                <p>À partir d'outils comme <strong>Syft</strong> ou <strong>Google Alerts</strong>, je sélectionne les articles. Grâce à un <strong>Raccourci iOS personnalisé</strong>, je partage l'URL directement vers un <strong>Webhook Make</strong>. Cela me permet de filtrer ma veille "à la volée" depuis n'importe quel endroit.</p>
+            </div>
+            <div class="col-md-5 text-center order-2 order-md-1">
+                <img src="./img/make/raccourci.jpg" alt="Raccourci iOS" class="img-fluid rounded shadow-sm" style="max-height: 450px; object-fit: contain;">
+            </div>
+        </div>
+
+        <hr class="text-muted opacity-25">
+
+        <div class="row align-items-center mb-5 mt-4">
+            <div class="col-md-5 text-center order-2 order-md-1">
+                <img src="./img/make/make.png" alt="Workflow Make" class="img-fluid rounded shadow-sm" style="max-height: 450px; object-fit: contain;">
+            </div>
+            <div class="col-md-7 order-1 order-md-2 mb-3 mb-md-0">
+                <h3 class="h5 fw-bold text-primary">2. Scraping & Analyse par IA</h3>
+                <p>Le scénario <strong>Make</strong> récupère le contenu brut de l'article (Scraping). Ce contenu est envoyé via API à <strong>ChatGPT</strong> avec un prompt spécifique pour générer une synthèse structurée, extraire les points clés et définir une catégorie technologique.</p>
+            </div>
+        </div>
+
+        <hr class="text-muted opacity-25">
+
+        <div class="row align-items-center mb-5 mt-4">
+            <div class="col-md-7">
+                <h3 class="h5 fw-bold text-primary">3. Stockage & Publication</h3>
+                <p>La synthèse et les métadonnées sont stockées dans un <strong>Google Sheets</strong>. Ce dernier sert de base de données : mon portfolio récupère ces lignes en temps réel pour afficher les derniers articles de veille sans aucune intervention manuelle supplémentaire.</p>
+            </div>
+            <div class="col-md-5 text-center order-2 order-md-1">
+                <img src="./img/make/sheets.png" alt="Base de données Google Sheets" class="img-fluid rounded shadow-sm" style="max-height: 450px; object-fit: contain;">
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="mb-5" id="competences-detail">
+    <h2 class="h4 fw-bold mb-4">Compétences mobilisées (Référentiel BTS SIO)</h2>
+
+    <div class="row g-4">
+        <div class="text-center mb-4">
+            <div class="card h-100 shadow-sm border-0 changement-mode bg-light text-dark">
+                <div class="card-body">
+                    <h5 class="fw-bold text-primary">Automatisation d'un système de veille technologique (Make, IA, API) </h5>
+                    <p class="small text-muted mb-3">Compétences : Organiser son développement professionnel | Gérer le patrimoine informatique.</p>
+                    <a href="https://groupesb.sharepoint.com/sites/BTSSIO2026/_layouts/15/Doc.aspx?sourcedoc={d19f7864-7ec3-4fc2-a84a-990667434dc3}&action=view&wd=target%28PIERRICK%20TOKAREK%2FExamens.one%7C2d4ffac4-72e1-453c-bce8-99a92427c324%2FAutomatisation%20d%27un%20syst%C3%A8me%20de%20veille%20technologique%20%28Make%2C%7C2f456421-3e76-4786-b1ae-e756712a7248%2F%29&wdorigin=NavigationUrl" target="_blank" class="btn btn-sm btn-outline-info w-100">
+                        <i class="bi bi-link-45deg"></i> Preuve OneNote
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="text-center mt-5">
+        <div class="p-5 bg-primary text-white rounded shadow">
+            <h3>Tableau de Synthèse E5</h3>
+            <p>Retrouvez ce projet et les autres compétences validées dans mon tableau récapitulatif.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1xKUVr0PZKrynhPA0k71Z0cexRtnzsz7A/edit?gid=1607753560#gid=1607753560" class="btn btn-light btn-lg mt-3" target="_blank">
+                <i class="bi bi-file-earmark-spreadsheet-fill"></i> Voir le Tableau complet
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="py-4 mt-5 border-top">
+    <div class="container text-center">
+        <p>&copy; 2026 Pierrick Tokarek. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
