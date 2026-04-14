@@ -199,7 +199,7 @@ document.getElementById("toggleMode").addEventListener("click", function () {
       
       container.innerHTML = ''; 
 
-      data.reverse().forEach(article => {
+      data.reverse().slice(0, 4).forEach(article => {
         // Changement ici : col-md-6 pour faire 2 colonnes sur PC
         // h-100 sur la carte pour égaliser les hauteurs
         const cardHTML = `
